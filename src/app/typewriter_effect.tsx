@@ -3,6 +3,22 @@
 import React from 'react';
 import { TypewriterEffect as TypewriterEffectComponent } from '../../components/ui/typewriter_effect_component';
 
+/*
+interface WordWithImage {
+  text: string;
+  image: string; // URL or path to the image
+}
+
+const wordsWithImages: WordWithImage[] = [
+  { text: 'Eat', image: '/images/eat.png' },
+  { text: 'Sleep', image: '/images/sleep.png' },
+  { text: 'Code', image: '/images/code.png' },
+  { text: 'Repeat!', image: '/images/repeat.png' },
+];
+
+*/
+
+
 export default function TypewriterEffect() {
   const handleType = (count: number) => {
     console.log(count);
@@ -18,9 +34,9 @@ export default function TypewriterEffect() {
       loop={0}
       cursor
       cursorStyle='_'
-      typeSpeed={70}
-      deleteSpeed={50}
-      delaySpeed={1000}
+      typeSpeed={100}
+      deleteSpeed={100}
+      delaySpeed={2000}
       onLoopDone={handleDone}
       onType={handleType}
     />
